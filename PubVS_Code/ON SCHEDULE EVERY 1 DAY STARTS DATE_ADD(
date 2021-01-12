@@ -1,0 +1,27 @@
+ON SCHEDULE EVERY 1 DAY STARTS DATE_ADD(DATE_ADD(CURDATE(), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+
+
+
+CREATE PROCEDURE p_total()
+BEGIN
+	DECLARE n_total INT default 0
+	INSERT INTO tb_total (userNumber,createtime) VALUES(n_total,NOW());
+END;
+
+
+
+CREATE EVENT IF NOT EXISTS temp_event   
+    ON SCHEDULE EVERY 1 HOUR
+    ON COMPLETION PRESERVE ENABLE
+    DO CALL
+
+
+
+
+
+1、加班目标：
+    保障市局相关模型正常运转
+    保障黄浦业务系统正常运转
+2、加班任务：
+    市局日常任务数据更新维护
+    黄浦节假日数据保障
