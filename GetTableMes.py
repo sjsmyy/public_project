@@ -29,4 +29,4 @@ app = Flask(__name__)  # 创建一个服务
 @app.route('/get_userData', methods=['post'])
 def get_userData():
     return jsonify(jsonData)
-app.run(host="0.0.0.0", port=8802, debug=False) 1
+app.run(host="0.0.0.0", port=8802, debug=False)
