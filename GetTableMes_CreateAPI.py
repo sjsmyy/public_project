@@ -13,7 +13,7 @@ conn = pysql.connect(
 # 创建游标
 curl = conn.cursor()
 # 游标调用sql
-sqli = "select * from helloMySQL;"
+sqli = "select * from helloMySQL where id <5;"
 # 通过游标执行sql
 curl.execute(sqli)
 # 获取标中所有的数据，转存对象
